@@ -19,7 +19,8 @@
 				$("#expandbutton").html("node is working...");
 				$("#expandbutton").attr("disabled","disabled");
 				$("#shorturl").attr("disabled","disabled");
-				$.get("http://landeiro.no.de/expand/?shorturl=" + shorturl, function(data) {
+				$.getJSON("http://landeiro.no.de/expand/?shorturl=" + shorturl+"&callback=?", function(data) {
+					data = JSON.parse(data);
 					$("#result").html(data.longurl).hide().fadeIn();
 					$("#time").html("Xpanded in " + data.milliseconds + " milliseconds").hide().fadeIn();
 					$("#expandbutton").html("expand url");
@@ -62,9 +63,9 @@
         <section>
            <div class="clear"></div>
            <div id="result"></div>
-		
+		<div class="form">
 <label for="text">URL </label><input size="30" name="text" type="url" id="shorturl"/><button id="expandbutton" onclick="expand($('#shorturl').val())" >expand url</button>
-		
+		</div>
 			<div class="clear"></div>
 			<div id="time"></div>
         	<footer></footer>

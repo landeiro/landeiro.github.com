@@ -134,13 +134,13 @@ nav li a, nav li a:visited { color:#fff; text-decoration:none; font-weight:bold;
 nav li a:hover { text-decoration:underline}
 nav ul { float:right; padding:10px;}
 .content { padding:10%; min-width:1%;}
-form { font-size:150%; font-weight:bold; padding:5% 10%; float:left; width:100%}
-form * { float:left; margin-right:5%;}
-form input{border: 1px solid #e1e1d5;  width:50%;  padding: 11px 0px 11px 7px;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; font-size:150%; font-weight:bold }
-form input:focus {  border-color: #5ba9e5;  -moz-box-shadow: 0px 0px 5px #0075CE;  -o-box-shadow: 0px 0px 5px #0075CE;  -webkit-box-shadow: 0px 0px 5px #0075CE;  box-shadow: 0px 0px 5px #0075CE; }
+div.form { font-size:150%; font-weight:bold; padding:5% 10%; float:left; width:100%}
+div.form * { float:left; margin-right:5%;}
+div.form input{border: 1px solid #e1e1d5;  width:50%;  padding: 11px 0px 11px 7px;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; font-size:150%; font-weight:bold }
+div.form input:focus {  border-color: #5ba9e5;  -moz-box-shadow: 0px 0px 5px #0075CE;  -o-box-shadow: 0px 0px 5px #0075CE;  -webkit-box-shadow: 0px 0px 5px #0075CE;  box-shadow: 0px 0px 5px #0075CE; }
 button {  background: #515151;  border: none;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  color: #f6f6e8;   padding: 10px 20px; margin-top:5px;  text-align: center;  -webkit-appearance: none;  }
 button:hover {  background: #353535; }
-form label { padding-top:15px}
+div.form label { padding-top:15px}
 
 
 
