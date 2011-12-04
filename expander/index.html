@@ -1,1 +1,76 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AAAA</title>
+<!-- disable iPhone inital scale -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+<meta name="description" content="AAAA" />
+<meta name="keywords" content="DDDD" />
+<meta name="author" content="BBBB" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="styles.css" media="screen" rel="stylesheet" type="text/css" />		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+		<script>
+			function expand(shorturl) {
+				$("#expandbutton").html("node is working...");
+				$("#expandbutton").attr("disabled","disabled");
+				$("#shorturl").attr("disabled","disabled");
+				$.get("http://landeiro.no.de/expand/?shorturl=" + shorturl, function(data) {
+					$("#result").html(data.longurl).hide().fadeIn();
+					$("#time").html("Xpanded in " + data.milliseconds + " milliseconds").hide().fadeIn();
+					$("#expandbutton").html("expand url");
+					$("#expandbutton").removeAttr("disabled");
+					$("#shorturl").removeAttr("disabled");
+				});
+			
+			}
+			$(document).ready(function (){
+				$("#shorturl").keypress(function(event) {
+				if(event.which == 13) {
+					event.preventDefault();
+					expand($("#shorturl").val());
+				}
+			});
+
+			});
+			
+		</script>
+</head>
+<body> 
+<nav>
+   <div class="container_12">
+    <div class="grid_12">
+         <div class="relative"><div class="logotype"><h1>Xpand.node</h1></div></div>
+        <ul>
+            <li><a href="http://twitter.com/landeiro" title="Twitter Page">Twitter</a></li>
+            <li><a href="http://www.linkedin.com/in/pedrolandeiro" title="Linkedin Page">Linkedin</a></li>
+            <li><a href="https://github.com/landeiro" title="GitHub Page">GitHub</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="clear"></div>
+</nav>
+<div class="container_12">
+           <div class="content">
+           	Xpand.node is working example of <a href="https://github.com/landeiro/Simple-URL-Expander">Simple-URL-Expander</a> - Extra small node.js lib that expands virtually all existing shorturls. 
+           </div>
+    <div class="grid_12">
+        <section>
+           <div class="clear"></div>
+           <div id="result"></div>
+		<form>
+<label for="text">URL </label><input size="30" name="text" type="url" id="shorturl"/><button id="expandbutton" onclick="expand($('#shorturl').val())" >expand url</button>
+		</form>
+			<div class="clear"></div>
+			<div id="time"></div>
+        	<footer></footer>
+        </section>
+    </div>
+    
+</div>
+</body>
+</html>
