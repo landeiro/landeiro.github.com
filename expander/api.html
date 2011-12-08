@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>SUExpander - node.js shorturl expander</title>
+		<title>API - SUExpander - node.js shorturl expander</title>
 		<!-- disable iPhone inital scale -->
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<meta name="description" content="AAAA" />
@@ -42,27 +42,47 @@
 		</nav>
 		<div class="container_12">
 			<div class="content">
-				<p>
-					SUExpander is working example of <a href="https://github.com/landeiro/Simple-URL-Expander">Simple-URL-Expander</a> an extra small node.js lib that expands virtually all existing shorturls.
+				<p class="title">
+					API
 				</p>
+				<p>
+					You can use directly the SUE API
+				</p>
+				<div class="url_example">
+					http://landeiro.no.de/expand/?shorturl=http://bitly.com/jawLQE
+				</div>
+				<p>
+					the result will be
+				</p>
+				<div class="url_example">
+					<pre>
+{
+  "shorturl":"http://bitly.com/jawLQE",
+  "longurl":"https://github.com/landeiro/PJsonCouch",
+  "milliseconds":47
+ }
+						</pre>
+				</div>
 				<br/>
-				Use the form bellow to expand the shorturls you desire or use the <a href="api.html">API</a>.
-			</div>
-			<div class="grid_12">
-				<section>
-					<div class="clear"></div>
-					<div class="form">
-						<input size="40" name="text" type="url" id="shorturl"/>
-						<button id="expandbutton" onclick="expand($('#shorturl').val())" >
-							expand url
-						</button>
-						<div class="result_placement" id="result_placement"></div>
-						<div class="clear"></div>
-						<div class="time" id="time"></div>
-					</div>
-					<div class="clear"></div>
-					<footer></footer>
-				</section>
+				<p>
+					Handling errors
+				</p>
+				<div class="url_example">
+					http://landeiro.no.de/expand/?shorturl=thisWillCauseAndError
+				</div>
+				<p>
+					the result will be
+				</p>
+				<div class="url_example">
+					<pre>
+{
+  "shorturl":"http://thisWillCauseAndError",
+  "longurl":"error",
+  "message":"ENOTFOUND, Domain name not found",
+  "milliseconds":613
+}
+						</pre>
+				</div>
 			</div>
 	</body>
 </html>

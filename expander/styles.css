@@ -123,26 +123,32 @@ a:hover { color: #0075CE;text-decoration:underline }
  *
  * Author: António Manuel Cardoso antonio.designer@gmail.com
  */
-body{width:100%;min-width:1%}.container_12{margin-left:auto;margin-right:auto;width:100%;max-width:960px;min-width:1%} .grid_12{display:inline;float:left;margin-left:10px;margin-right:10px;width:90%}
+body{width:100%;min-width:1%;background-color:#E6E7E7}
+.container_12{margin-left:auto;margin-right:auto;width:100%;max-width:960px;min-width:1%} 
+.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px;width:90%}
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 .relative { position:relative;}
-.logotype { position:absolute;  background-color:#fff; padding:10px 20px; top:5px;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; }
-.logotype h1 {font-size:300%; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; color:#0075CE;}
-nav { background-color:#333; border-bottom:1px solid #fff;  moz-box-shadow: 0px 0px 10px #515151;  -o-box-shadow: 0px 0px 10px #515151;  -webkit-box-shadow: 0px 0px 10px #515151;  box-shadow: 0px 0px 10px #515151;}
-nav  li { display:inline; padding:5px 20px;}
+.logotype { position:absolute;  background-color:#FFF; padding:10px 20px; top:5px;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;   moz-box-shadow: 0px 0px 50px #515151;  -o-box-shadow: 0px 0px 50px #515151;  -webkit-box-shadow: 0px 0px 50px #515151;  box-shadow: 0px 0px 50px #515151;}
+.logotype h1 {background-color:#FFF;font-size:300%; font-family: 'Baumans', cursive; color:#BC0042;}
+nav { background-color:#051D36	; border-bottom:1px solid #fff;  moz-box-shadow: 0px 0px 25px #515151;  -o-box-shadow: 0px 0px 25px #515151;  -webkit-box-shadow: 0px 0px 25px #515151;  box-shadow: 0px 0px 25px #515151;}
+nav  li { display:inline; padding:5px 5px;}
+nav  li a img { width:30px}
 nav li a, nav li a:visited { color:#fff; text-decoration:none; font-weight:bold; font-size:108.3%}
 nav li a:hover { text-decoration:underline}
 nav ul { float:right; padding:10px;}
-.content { padding:10%; min-width:1%;}
-div.form { font-size:150%; font-weight:bold; padding:5% 10%; float:left; width:100%}
-div.form * { float:left; margin-right:5%;}
-div.form input{border: 1px solid #e1e1d5;  width:50%;  padding: 11px 0px 11px 7px;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; font-size:150%; font-weight:bold }
+.content { padding-top:7%;padding-right:10%;padding-left:5%; font-family: 'Petrona', serif;font-size:20px;font-weight:400}
+div.form { font-size:150%; font-weight:bold; padding:5% 5%; float:left; width:100%}
+div.form * { float:left; margin-right:2%;}
+div.form input{border: 1px solid #e1e1d5;  width:70%;  padding: 11px 0px 11px 7px;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; font-size:150%; font-weight:bold }
 div.form input:focus {  border-color: #5ba9e5;  -moz-box-shadow: 0px 0px 5px #0075CE;  -o-box-shadow: 0px 0px 5px #0075CE;  -webkit-box-shadow: 0px 0px 5px #0075CE;  box-shadow: 0px 0px 5px #0075CE; }
 button {  background: #515151;  border: none;  -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius: 3px;  color: #f6f6e8;   padding: 10px 20px; margin-top:5px;  text-align: center;  -webkit-appearance: none;  }
 button:hover {  background: #353535; }
 div.form label { padding-top:15px}
-
-
+.result {width:90%;background: #FDFEDD;border-color:#000;  border: 1px;  -moz-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;  color: #000;   padding: 10px 20px; margin-top:5px;   -webkit-appearance: none;  }
+.time {margin-left:auto;margin-right:auto;width:95%;max-width:960px;min-width:1%;font-family:Coda;font-size:12px;text-align:right}
+.result_placement {margin-left:auto;margin-right:auto;width:100%;max-width:960px;min-width:1%}
+.content .title {font-family: 'Petrona', cursive; color:#000;font-size:35px}
+.url_example {width:90%;background: #FFF;  border: none;  -moz-border-radius: 5px;  -webkit-border-radius: 5px;  border-radius: 5px;  color: #000;   padding: 10px 20px; margin-top:5px;   -webkit-appearance: none;  }
 
 /**
  * Non-semantic helper classes: please define your styles before this section.
@@ -205,6 +211,7 @@ div.form label { padding-top:15px}
 @media (max-device-width: 768px) and (orientation: portrait) {
  .container_12{max-width:768px;}
 }
+
 
 /**
  * Print styles.
